@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap" rel="stylesheet">
+    <title>Muhamamd Hammad Asghar</title>
+    <style>
+
+        .dropdown {
+            display: grid;
+            grid-template-columns: 100vw;
+            /* flex-direction: column; */
+        }
+        :root{
+        }
+        /* ____________________________________> Page one_____________________________________________________ */
+        .conatiner {
+            /* border: 2px solid black; */
+            display: block;
+            background-color: #E4F9F5;
+            height: 100%;
+            width: 100vw;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: center;
+            font-family: 'Edu SA Beginner', cursive;
+        }
+        
+        #Name {
+            margin-top: 100px;
+        }
+        
+        .downbutton {
+            border: 2px solid black;
+            border-radius: 13px;
+            font-size: 1.2rem;
+            font-style: bold;
+            height: 50px;
+            width: 50px;
+            position: absolute;
+            left: 46vw;
+            top: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .downbutton:hover {
+            height: 70px;
+            width: 70px;
+            left: 45vw;
+            top: 390px;
+        }
+        .conatiner::after
+        {
+            content: "";
+        }
+        /* ____________________________________> Page two_____________________________________________________ */
+        .myself_Page
+        {
+            background-color: #f7f7f7;
+            /* height: 600px; */
+            width: 100vw;
+            text-align: center;
+            font-family: 'Edu SA Beginner', cursive;
+        }
+        #profilePic
+        {
+            display: block;
+        }
+        </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <div class="conatiner">
+            <section>
+
+                <h1 id="Name">I am Muahammad Hammad Asghar</h1>
+                <h2>I am a Programmer</h2>
+                <div class="downbutton">
+                    More.
+                </div>
+            </section>
+        </div>
+        <div class="myself_Page">
+            <section>
+
+                <img src="Images/ProfilePic.png" alt="">
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
