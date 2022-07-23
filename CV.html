@@ -6,92 +6,179 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Muhamamd Hammad Asghar</title>
-    <style>
-
-        .dropdown {
-            display: grid;
-            grid-template-columns: 100vw;
-            /* flex-direction: column; */
-        }
-        :root{
-        }
-        /* ____________________________________> Page one_____________________________________________________ */
-        .conatiner {
-            /* border: 2px solid black; */
-            display: block;
-            background-color: #E4F9F5;
-            height: 100%;
-            width: 100vw;
-            position: absolute;
-            top: 0;
-            left: 0;
-            text-align: center;
-            font-family: 'Edu SA Beginner', cursive;
-        }
-        
-        #Name {
-            margin-top: 100px;
-        }
-        
-        .downbutton {
-            border: 2px solid black;
-            border-radius: 13px;
-            font-size: 1.2rem;
-            font-style: bold;
-            height: 50px;
-            width: 50px;
-            position: absolute;
-            left: 46vw;
-            top: 400px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .downbutton:hover {
-            height: 70px;
-            width: 70px;
-            left: 45vw;
-            top: 390px;
-        }
-        .conatiner::after
-        {
-            content: "";
-        }
-        /* ____________________________________> Page two_____________________________________________________ */
-        .myself_Page
-        {
-            background-color: #f7f7f7;
-            /* height: 600px; */
-            width: 100vw;
-            text-align: center;
-            font-family: 'Edu SA Beginner', cursive;
-        }
-        #profilePic
-        {
-            display: block;
-        }
-        </style>
+    
 </head>
 
 <body>
     <div class="dropdown">
         <div class="conatiner">
-            <section>
-
-                <h1 id="Name">I am Muahammad Hammad Asghar</h1>
-                <h2>I am a Programmer</h2>
+            <div>
+                <h1 id="Name" class="ThemeColorStyle">I am Muahammad Hammad Asghar</h1>
+                <h2> a Programmer</h2>
                 <div class="downbutton">
                     More.
                 </div>
-            </section>
+            </div>
         </div>
         <div class="myself_Page">
             <section>
-
-                <img src="Images/ProfilePic.png" alt="">
+                <img src="Images/profileSquare.png" alt="" id="profilePic">
+                <div>
+                    <h2 id="HelloTag" class="ThemeColorStyle">Hello</h2>
+                    <h3 id="helloText" class="themeParagrapghFont">I am a Desktop Appication and Wed Developer. I have a great crush &#128151 on
+                        Chocolate</h3>
+                    <p class="endingDots">.....</p>
+                </div>
             </section>
+        </div>
+        <div class="Page3">
+            <div class="contentcontainer">
+                <h2 id="Heading" class="ThemeColorStyle">Academic Status</h2>
+                <div class="TableContainer">
+
+                    <table class="content-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Degree</th>
+                                <th>Session</th>
+                                <th>Board</th>
+                                <th>Obtain</th>
+                                <th>Insititude</th>
+                            </tr>
+                        </thead>
+                        <tbody class="themeParagrapghFont">
+                            <tr>
+                                <td>1</td>
+                                <td>Matric</td>
+                                <td>2017-19</td>
+                                <td>Bise Lhr</td>
+                                <td>81%</td>
+                                <td>Lahore Public</td>
+                            </tr>
+                            <tr class="active-row">
+                                <td>2</td>
+                                <td>Fsc Pre Eng.</td>
+                                <td>2019-21</td>
+                                <td>Bise Lhr</td>
+                                <td>99.45%</td>
+                                <td>Govt. Shalimar College</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>BSCs</td>
+                                <td>2021-25</td>
+                                <td>HEC</td>
+                                <td>Continus</td>
+                                <td>UET Lhr</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="endingDots">.....</p>
+            </div>
+            <!-- <p class="endingDots">.....</p> -->
+        </div>
+        <div class="Page4">
+            <h2 class="ThemeColorStyle">Skills</h2>
+            <div class="skills">
+                <div class="gridBox"><img src="Images/C++.jpg" alt="C++" class="Image"></div>
+                <div class="gridBox">
+                    <h4 class="ThemeColorStyle">C++ :</h4>
+                    <p class="SkillsDescriptionLines">I study the C++ Language form UET (University of Engineering &
+                        Technology) as the subject Bachelor
+                        Degree in 1st Semester</p>
+                </div>
+
+                <div class="gridBox"><img src="Images/C#.jpg" alt="C#" class="Image"></div>
+                <div class="gridBox">
+                    <h4 class="ThemeColorStyle" >C# :</h4>
+                    <p class="SkillsDescriptionLines" >I study the C# Language form UET (University of Engineering &
+                        Technology) as the subject Bachelor
+                        Degree in 2nd semester with LINQ</p>
+                </div>
+
+                <div class="gridBox"><img src="Images/py.jpg" alt="python" class="Image"></div>
+                <div class="gridBox">
+                    <h4 class="ThemeColorStyle">Python :</h4>
+                    <p class="SkillsDescriptionLines">I study the Python Language form UET (University of Engineering &
+                        Technology) as the subject
+                        Bachelor Degree in 2nd semester</p>
+                </div>
+
+                <div class="gridBox"><img src="Images/web.png" alt="Web Development" class="Image"></div>
+                <div class="gridBox">
+                    <h4 class="ThemeColorStyle">Web Development :</h4>
+                    <p class="SkillsDescriptionLines">I have an experenice of Front-end and Back-end, full stack Web
+                        Development</p>
+                </div>
+
+                <div class="gridBox"><img src="Images/Ms.jpg" alt="Ms office" class="Image"></div>
+                <div class="gridBox">
+                    <h4 class="ThemeColorStyle">MS Office :</h4>
+                    <p class="SkillsDescriptionLines" >I am certified MS office from Peak Solution in 2018</p>
+                </div>
+            </div>
+        </div>
+        <div class="Page5">
+            <div class="Page5Container">
+                <div id="Page5box-1">
+                    <p class="Page5_EndingPoint">.....</p>
+                    <h2 class="ThemeColorStyle">Experience</h2>
+                </div>
+                <div id="Page5box-2">
+                    <div class="leftSideShiftImageAlignment_Page5">
+                        <img src="Images/pharmacy2.jpg" alt="" class="Image">
+                        <h3>MedijZone</h3>
+                    </div>
+                    <div class="RightSideShiftDesciptionAlignment_Page5">
+                        <p>I worked 5 month in MedijZone Pharmacy Baghbanpura,LHR</p>
+                    </div>
+                </div>
+                <div id="Page5box-3">
+                    <div class="leftSideShiftDesciptionAlignment_Page5">
+                        <p>I worked 5 month in Ideal Pharmacy Daroghawala,LHR</p>
+                    </div>
+                    <div class="RightSideShiftImageAlignment_Page5">
+                        <img src="Images/pharmacy1.jpg" alt="" class="Image" >
+                        <h3>Ideal Pharmacy</h3>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+                <div>
+
+                    <p class="Page5_EndingPoint">.....</p>
+                </div>
+            </div>
+        </div>
+        <div class="Page6">
+           <div class="Page6_container">
+
+               <div class="UpperPart">
+                   <h2 id="Page6_heading" class="ThemeColorStyle">Get In Touch</h2>
+                   <h3 class="themeParagrapghFont">If you wants any services like web Development,Desktop Application,Console Application</h3>
+                </div>
+                <div class="BottomPart">
+                    <div class="links">
+                        <div>
+                            <a href="https://github.com/Muhammad-Hammad-Asghar-56" target="_blank" >github</a>
+                        </div>
+                        <div>
+                            <a href="http://Facebook.com" target="_blank">Facebook</a>
+                        </div>
+                        <div>
+                            <a href="http://Twitter.com" target="_blank">Twitter</a>
+                        </div>
+                    </div>
+                    <div class="EndingClousre">
+                        <p>&#xa9 Hammad Muhammad-Hammad-Asghar-56</p>
+                    </div>
+                </div> 
+            </div>
         </div>
     </div>
 </body>

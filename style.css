@@ -1,3 +1,337 @@
-img{
-    <link href="https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500&display=swap" rel="stylesheet">
+* {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+@media(min-width:400px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+.dropdown {
+    display: block;
+    /* grid-template-rows: 100vh; */
+    /* flex-direction: column; */
+}
+
+.ThemeColorStyle {
+    color: skyblue !important;
+    font-family: 'Edu SA Beginner', cursive !important;
+}
+
+.themeParagrapghFont {
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+/* ____________________________________> Page one_____________________________________________________ */
+.conatiner {
+    /* border: 2px solid black; */
+    display: block;
+    background-color: #E4F9F5;
+    height: 100%;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-family: 'Edu SA Beginner', cursive;
+    /* z-index: -1; */
+}
+
+#Name {
+    margin-top: 15rem;
+}
+
+.downbutton {
+    border: 2px solid black;
+    border-radius: 13px;
+    font-size: 1.2rem;
+    font-style: bold;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 46vw;
+    top: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.downbutton:hover {
+    height: 70px;
+    width: 70px;
+    justify-items: center;
+}
+
+/* ____________________________________> Page two_____________________________________________________ */
+.myself_Page {
+    /* background-color: #8b7c7c; */
+    position: absolute;
+    top: 100%;
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+}
+
+#profilePic {
+    height: 300px;
+    width: 300px;
+    border-radius: 200px;
+    margin-top: 4rem;
+}
+
+#HelloTag {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+#helloText {
+    /* margin: 27px 342px; */
+    margin: 2rem 25rem;
+    font-size: 1.3rem;
+}
+
+.endingDots {
+    position: relative;
+    top: 97%;
+    font-size: 60px;
+    color: #5f8080;
+}
+
+/* ----------------------------------------- Page #  3 ------------------------------------------ */
+/*                                          Academic result                                      */
+.Page3 {
+    /* pageSettings */
+    /* background-color: #c5d47f; */
+    position: absolute;
+    top: 200%;
+    width: 100vw;
+    height: 100%;
+    /* display: flex; */
+    text-align: center;
+    /* justify-items: center; */
+}
+
+#Heading {
+    margin: 100px 100px;
+    font-weight: bold;
+    font-size: 3rem;
+    text-shadow: 1px;
+
+}
+
+.TableContainer {
+    display: flex;
+    margin: 150px 100px;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-table {
+    border-collapse: collapse;
+    width: 900px;
+    text-align: left;
+    /* border: 1px solid black; */
+}
+
+.content-table thead tr {
+    margin: 10px 10px;
+    padding: 100px 100px;
+    background-color: #8b7c7c;
+    border: 1px solid black;
+    font-size: 1.4rem;
+}
+
+.content-table tbody td {
+    padding: 10px 10px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid black;
+}
+
+/* ----------------------------------------- Page # 4------------------------------------------ */
+.Page4 {
+    /* pageSettings */
+    /* background-color: rgb(89, 173, 173); */
+    position: absolute;
+    top: 300%;
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.Page4 h2 {
+    font-size: 3rem;
+    /* text-decoration: underline; */
+}
+
+.skills {
+    /* gridviewsettings */
+    display: grid;
+    /* grid-gap: 0rem; */
+    margin-top: 30px;
+    height: 50%;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.Image {
+    height: 150px;
+    width: 150px;
+    border-radius: 200px;
+}
+
+.skills h4 {
+    font-size: 30px;
+}
+
+.gridBox {
+    /* border: 2px solid green; */
+    text-align: left;
+}
+
+.gridBox:nth-child(even) {
+    /* Select the boxes */
+    display: flex;
+
+}
+
+.gridBox:nth-child(odd) {
+    /* Select the boxes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SkillsDescriptionLines {
+    font-size: 1.25rem;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+/* ------------------------------- Page 5 ------------------------------------------ */
+/* ------------------------------- Experience ------------------------------------------ */
+.Page5 {
+    /* pageSettings */
+    /* background-color: #80391e; */
+    position: absolute;
+    top: 400%;
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+}
+
+.Page5 h2 {
+    font-size: 3rem;
+}
+
+.Page5Container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+
+.Page5box-2 {
+    display: flex;
+    float: left;
+}
+
+.Page5box-3 {
+    display: flex;
+    float: left;
+}
+
+.leftSideShiftImageAlignment_Page5 {
+    position: absolute;
+    left: 20%;
+}
+
+.RightSideShiftImageAlignment_Page5 {
+    position: absolute;
+    left: 70%;
+}
+
+.leftSideShiftDesciptionAlignment_Page5 {
+    position: absolute;
+    left: 20%;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.RightSideShiftDesciptionAlignment_Page5 {
+    position: absolute;
+    font-size: 1.5rem;
+    left: 50%;
+    margin-top: 2rem;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+.Page5_EndingPoint {
+    font-size: 60px;
+    color: #5f8080;
+    margin: 0px 0px;
+}
+
+/* ------------------------------------ Page 6 ----------------------------------------------------- */
+.Page6 {
+    /* pageSettings */
+    /* background-color: #ffffff; */
+    position: absolute;
+    top: 500%;
+    width: 100vw;
+    height: 100%;
+    text-align: center;
+}
+
+#Page6_heading {
+    font-size: 4rem;
+}
+
+.Page6_container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.UpperPart {
+    margin-top: 6rem;
+}
+
+.BottomPart {
+    background-color: #66BFBF;
+}
+
+.UpperPart h1+h3 {
+    margin-top: 2rem;
+    font-size: 25px;
+}
+
+.BottomPart {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.links {
+    margin-top: 2rem;
+}
+
+.links div {
+    margin: 0rem 2rem;
+    display: inline;
+}
+
+.links div>a {
+    color: #0a464b;
+    font-size: 1.4rem;
+    text-decoration: none;
+}
+
+.EndingClousre {
+    color: #ffff;
 }
