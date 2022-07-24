@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive CV</title>
+</head>
+<style>
+    #PagesContainer {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        text-align: center;
+        border-color: 2px solid rgb(0, 0, 0);
+        display: grid;
+        min-width: 100vw;
+    }
+
+    .Page {
+        min-width: 100vw;
+        min-height: 100vh;
+        background-color: green;
+    }
+
+    /*___________________________________________________________________________________________________________  */
+    /*                                 Page 1 */
+    /*___________________________________________________________________________________________________________  */
+    #Page-1 {
+        background-color: blue;
+        display: grid;
+        grid-template-rows: 4fr 1fr;
+    }
+
+    #Page1_header {
+        display: block;
+        text-align: center;
+    }
+
+    #Page1_header > section {
+        position: relative;
+        top: 45%;
+    }
+
+    /*___________________________________________________________________________________________________________  */
+    /*                                 Page 2 */
+    /*___________________________________________________________________________________________________________  */
+    #Page-2 {
+        background-color: rgb(29, 241, 1);
+        display: grid;
+        grid-template-rows: 4fr 1fr;
+    }
+
+    #profilePic {
+        height: 300px;
+        width: 300px;
+        border-radius: 200px;
+        margin-top: 4rem;
+    }
+    #Page2_header
+    {   position: relative;
+        top: 20%;
+    }
+    /*___________________________________________________________________________________________________________  */
+    /*                                 Page 3 */
+    /*___________________________________________________________________________________________________________  */
+    #Page-3 {
+        background-color: rgb(255, 145, 0);
+        /* display: grid; */
+    }
+
+    /*___________________________________________________________________________________________________________  */
+    /*                                 Page 4 */
+    /*___________________________________________________________________________________________________________  */
+    #Page-4 {
+        background-color: rgb(248, 7, 27);
+        /* display: grid; */
+    }
+
+    /*___________________________________________________________________________________________________________  */
+    /*                                 Page 5 */
+    /*___________________________________________________________________________________________________________  */
+    #Page-5 {
+        background-color: rgb(98, 177, 109);
+        /* display: grid; */
+    }
+
+    /*___________________________________________________________________________________________________________  */
+    /*                                 Page 6 */
+    /*___________________________________________________________________________________________________________  */
+    #Page-6 {
+        background-color: rgb(13, 244, 252);
+        /* display: grid; */
+    }
+</style>
+
+<body>
+    <div id="PagesContainer">
+        <div id="Page-1" class="Page">
+            <div id="Page1_header">
+                <section>
+                    <h1>I am Muahammad Hammad Asghar</h1>
+                    <h2>a Programmer</h2>
+                </section>
+            </div>
+            <div class="Page1_footer">
+                footer
+            </div>
+        </div>
+        <div id="Page-2" class="Page">
+            <div id="Page2_header">
+                    <img src="Images/profileSquare.png" alt="" id="profilePic">
+                    <div>
+                        <h2 id="HelloTag" class="ThemeColorStyle">Hello</h2>
+                        <h3 id="helloText" class="themeParagrapghFont">I am a Desktop Appication and Wed Developer. I
+                            have a great crush &#128151 on
+                            Chocolate</h3>
+                    </div>
+            </div>
+            <div class="Page2_footer">
+                <p class="endingDots">.....</p>
+            </div>
+        </div>
+        <div id="Page-3" class="Page">I am 3 box</div>
+        <div id="Page-4" class="Page">I am 4 box</div>
+        <div id="Page-5" class="Page">I am 5 box</div>
+        <div id="Page-6" class="Page">I am 6 box</div>
+    </div>
+</body>
+
+</html>
